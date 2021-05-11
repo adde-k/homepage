@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100;
+  box-sizing: border-box;
+  font-family: Helvetica, "sans serif";
+  color:$text-color;
+  margin: 0; 
+}
+
+/* Styling av navbar i min header */
+  header {
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-color:#e1fcff;
+  }
+  header a {
+    width: 20%;
+    margin-top: 20px;
+  }
+  header nav {
+    padding: 10px;
+  }
+  header nav a {
+    display: inline;
+    padding: 15px;
+    margin-right: 10px;
+  }
+  nav a:hover {
+    color: #fff;
+  }
+
+div.content {
+    background-color: red;
+}
+
+ /* Här är styling för footern på sidan */
+footer {
+    background-color: #DDA6B9;
+    padding: 50px 100px;
+  }
