@@ -10,7 +10,7 @@ body {
 /* Styling av navbar i min header */
   header {
     /*background-color: rgba(255, 255, 255, 0.5);*/
-    background-color:#e1fcff;
+    background-color:#DDA6B9;
   }
   header a {
     width: 20%;
@@ -29,7 +29,14 @@ body {
   }
 
 div.content {
-    background-color: red;
+    background-color: #D08998;
+}
+
+section.content-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: rgba(189, 125, 183, 0.4);
 }
 
  /* Här är styling för footern på sidan */
