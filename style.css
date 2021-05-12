@@ -1,3 +1,4 @@
+/* Här är styling som gäller för alla rubriker och texter */
 html,
 body {
   height: 100;
@@ -6,9 +7,15 @@ body {
   margin: 0; 
 }
 
+/* Här har vi style för vår logotype */
+.logo img {
+  height: 250px;
+  width: 350px;
+  margin-top: -50px;
 
+}
 
-/* Styling av navbar i min header */
+/* Styling av navbar*/
 .nav-bar  {
   background-color:#004b87;
   padding: 15px;
@@ -24,9 +31,14 @@ body {
   text-decoration: none;
 }
 
-div.content {
-    background-color: #D08998;
-}
+/*sticky navbar */
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+
+
 
 section.content-section {
   display: flex;
@@ -39,8 +51,19 @@ section img {
 width: 100%;
 }
 
+/* Style av vår button på en image */
 .content-section .btn-book {
+  background-color: #004b87;
+  color: #ffff;
+  padding: 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
   position: absolute;
+  margin-bottom:30px;
+  padding: 25px 34px;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -52,9 +75,8 @@ width: 100%;
   border: none;
   cursor: pointer;
   border-radius: 30px;
-  text-align: center;
+  text-align: center; */
 }
-
 
 .pic-row {
   display: flex;
