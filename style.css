@@ -78,15 +78,52 @@ width: 100%;
   text-align: center; */
 }
 
+
+
 .pic-row {
   display: flex;
+  position: relative;
+  margin: auto;
+  
 }
-
+/*.pic-row {
+  display: none;
+}
+*/
 .pic-column {
   flex: 33.33%;
   padding: 5px;
 }
 
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 90px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
  /* Här är styling för footern på sidan */
 footer {
     background-color: #004b87;
