@@ -1,0 +1,94 @@
+/* Här är styling som gäller för alla rubriker och texter */
+html,
+body {
+  height: 100;
+  box-sizing: border-box;
+  font-family: Helvetica, "sans serif";
+  margin: 0; 
+}
+
+/* Här har vi style för vår logotype */
+.logo img {
+  height: 250px;
+  width: 350px;
+  margin-top: -50px;
+
+}
+
+/* Styling av navbar*/
+.nav-bar  {
+  background-color:#004b87;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  }
+ 
+.nav-bar a {
+/*   display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  color: #fff;
+  text-decoration: none;
+}
+
+/*sticky navbar */
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+
+
+
+section.content-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: rgba(189, 125, 183, 0.4);
+}
+
+section img {
+width: 100%;
+}
+
+/* Style av vår button på en image */
+.content-section .btn-book {
+  background-color: #004b87;
+  color: #ffff;
+  padding: 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  position: absolute;
+  margin-bottom:30px;
+  padding: 25px 34px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center; */
+}
+
+.pic-row {
+  display: flex;
+}
+
+.pic-column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+ /* Här är styling för footern på sidan */
+footer {
+    background-color: #004b87;
+    padding: 50px 100px;
+  }
