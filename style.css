@@ -1,7 +1,11 @@
 /* Här är styling som gäller för alla rubriker och texter */
 html,
 body {
+<<<<<<< HEAD
   height: 101px;
+=======
+  height: 100;
+>>>>>>> branch_adiba
   box-sizing: border-box;
   font-family: Helvetica, "sans serif";
   margin: 0; 
@@ -78,17 +82,68 @@ width: 100%;
   text-align: center; */
 }
 
+<<<<<<< HEAD
 .pic-row {
   display: flex;
 }
 
+=======
+
+
+.pic-row {
+  display: flex;
+  position: relative;
+  margin: auto;
+  
+}
+/*.pic-row {
+  display: none;
+}
+*/
+>>>>>>> branch_adiba
 .pic-column {
   flex: 33.33%;
   padding: 5px;
 }
 
+<<<<<<< HEAD
+=======
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 90px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+>>>>>>> branch_adiba
  /* Här är styling för footern på sidan */
 footer {
     background-color: #004b87;
     padding: 50px 100px;
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> branch_adiba
