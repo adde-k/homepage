@@ -93,12 +93,6 @@ width: 100%;
 
 }
 
-/* Three pictures in slideshow */
-.pic-1 {
-  float: left;
-  width: 23.33%;
-  padding: 1px;
-}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -116,13 +110,13 @@ width: 100%;
   user-select: none;
 }
 /* Position the "next button" to the right */
-.mySlideLinks .next {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* Position the "next button" to the right */
-.mySlideLinks .prev {
+.prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -132,7 +126,7 @@ width: 100%;
   background-color: rgba(0,0,0,0.8);
 }
 /* The dots/bullets/indicators */
-.mySlideLinks .dot {
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -164,7 +158,7 @@ width: 100%;
   from {opacity: .4}
   to {opacity: 1}
 
-  
+}
           /*css för contact-section */
 
           .contact-area {
