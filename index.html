@@ -82,10 +82,41 @@
 
     </section>
 
+
+    <!------ contact-section------>
+    <section class="contact-section">
+        <div class="contact-area">
+            <form action="/action_page.php" class="contact-form">
+            <h1>Kontakta oss</h1>
+        
+            <select id="enquery" name="Enquery" required>
+                <option value="">--Välj ärende--</option>
+                <option value="Kundsupport">Kundsupport</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Övrigt">Övrigt</option>
+                </select>
+
    
 
-    <footer>
 
+            <br>
+
+                <input type="text" class=" form-input flname" name="name" placeholder="Ditt namn.." required>
+
+                <br>
+                
+                <input type="email" class="form-input email" name="email" placeholder="Ditt Email-address.." required>
+            <br>
+                <textarea class="form-input msg" name="msg" placeholder="Skriv ditt meddelande.." ></textarea>
+            <br>
+                <input class="btn-contact" type="submit" value="Submit">
+            
+            
+            </form>
+        </div>
+    </section>
+    <footer>
+<!------ contact-section ------>
         <div class="footer-bottom">
             &copy; Design skapad av Andreas Angels
         </div>
