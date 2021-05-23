@@ -149,4 +149,13 @@ width: 100%;
 
 @keyframes fade {
   from {opacity: .4}
-  to {opacity: 1}
+  to {opacity: 1} }
+
+  /* Aboutus styling */
+  .aboutus {
+    width: 100%;
+    top: 200px;
+    padding-top: 100px;
+    padding-bottom: 500px;
+    background-color:white;
+  }
