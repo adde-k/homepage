@@ -1,21 +1,3 @@
-// Vid scrollning utförs funktionen myFunction
-window.onscroll = function() {myFunction()};
-
-// Hämtar min navbar
-let navbar = document.getElementById("navbar");
-
-//Hämta navbarens "offset" positionen 
-let sticky = navbar.offsetTop;
-
-//Lägger till Sticky Position när man scrollar annars avslutas Sticky Position
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 
 //Slideshow picture link gallery
 var slideIndex = 1;
@@ -47,4 +29,25 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+// Vid scrollning utförs funktionen myFunction
+window.onscroll = function() {myFunction()};
+
+// Hämtar min navbar
+let navbar = document.getElementById("navbar");
+
+//Hämta navbarens "offset" positionen 
+let sticky = navbar.offsetTop;
+
+//Lägger till Sticky Position när man scrollar annars avslutas Sticky Position
+//Fix scrolling bug
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky") 
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 
