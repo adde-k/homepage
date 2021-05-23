@@ -82,15 +82,22 @@ width: 100%;
 /* SLIDESHOW OF PICTURE WITH LINK*/
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
+
 
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlideLinks {
   display: none;
+
+}
+
+/* Three pictures in slideshow */
+.pic-1 {
+  float: left;
+  width: 23.33%;
+  padding: 1px;
 }
 
 /* Next & previous buttons */
@@ -109,8 +116,14 @@ width: 100%;
   user-select: none;
 }
 /* Position the "next button" to the right */
-.next {
+.mySlideLinks .next {
   right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.mySlideLinks .prev {
+  left: 0;
   border-radius: 3px 0 0 3px;
 }
 
@@ -119,7 +132,7 @@ width: 100%;
   background-color: rgba(0,0,0,0.8);
 }
 /* The dots/bullets/indicators */
-.dot {
+.mySlideLinks .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -150,3 +163,59 @@ width: 100%;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+
+  
+          /*css för contact-section */
+
+          .contact-area {
+            background-image: url("https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+          
+            min-height: 400px;
+          display: flex;
+          justify-content: center;
+            /* för bakgrundsbilden */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+          }
+          /* blå ruta över h1*/
+          .contact-area h1{
+            height: auto;
+            width: 200px;
+            background-color: #004b87;
+            text-align: center;
+            justify-content: center;
+          }
+          /*styla form container */
+          .contact-form {
+            position: absolute;
+            right: 300px;
+            margin: 25px;
+            max-width: 300px;
+            padding: 10px;
+            height: auto;
+            width: 350px;
+            background-color: white;
+            color: white;
+          }
+          .contact-section{
+          background-color: rgb(245, 245, 245) ; 
+          }
+          .form-input {
+              width: 100%; 
+              padding: 12px; 
+              border: 1px solid #ccc; 
+              border-radius: 4px; 
+              box-sizing: border-box; 
+              margin: 5px 0 22px 0;
+              
+            }
+          .msg{
+            resize: vertical ;
+          }
+          #enquery{
+            width: 100px;
+            border-radius: 3px;
+          }
+        
