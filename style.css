@@ -15,6 +15,7 @@ body {
 
 }
 
+
 /* Styling av navbar*/
 .nav-bar  {
   background-color:#004b87;
@@ -33,9 +34,10 @@ body {
 
 /*sticky navbar */
  .sticky {
-  position: fixed;
+  position: ST;
   top: 0;
   width: 100%;
+  
 } 
 
 
@@ -60,7 +62,7 @@ width: 100%;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
-  position: absolute;
+  position: relative;
   margin-bottom:30px;
   padding: 25px 34px;
   /* position: absolute;
@@ -124,10 +126,7 @@ width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-
-          /*css för contact-section */
-
-  .contact-area {
+  .content-section {
     background-image: url("https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
   
     min-height: 400px;
@@ -139,28 +138,51 @@ width: 100%;
     background-size: cover;
     position: relative;
   }
-  /* blå ruta över h1*/
-  .contact-area h1{
-    height: auto;
-    width: 200px;
-    background-color: #004b87;
+
+          /*css för contact-section */
+
+  .contact-div {
+    background-image: url("https://images.unsplash.com/photo-1500759285222-a95626b934cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  
+    min-height: 400px;
+  
+    /* för bakgrundsbilden */
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+  }
+  
+  .contact-div h1{
+    
+    color: #004b87;
     text-align: center;
     justify-content: center;
   }
   /*styla form container */
-  .contact-form {
+  .form-container {
     position: absolute;
-    right: 300px;
-    margin: 25px;
+    right: 15%;
+    margin: 15px;
     max-width: 300px;
-    padding: 10px;
+    padding:10px;
     height: auto;
-    width: 350px;
+    width: auto;
     background-color: white;
-    color: white;
+    border: 5px solid #004b87;
+    border-radius: 4px;
+  }
+  form div {
+    display: flex;
+    flex-direction: row;
   }
   .contact-section{
-  background-color: rgb(245, 245, 245) ; 
+  background-color: white ; 
   }
   .form-input {
       width: 100%; 
@@ -168,18 +190,41 @@ width: 100%;
       border: 1px solid #ccc; 
       border-radius: 4px; 
       box-sizing: border-box; 
-      margin: 5px 0 22px 0;
+      margin: 5px 0 10px 0;
+      
       
     }
+    #enquery{
+      width: auto;
+      height: auto;
+      border-radius: 4px;
+  
+    }
+    .flname,.email{
+      width: 100%;
+    }
+    .email{
+      resize: vertical ;
+    }
   .msg{
+    height: 100px;
+    width: 100%;
     resize: vertical ;
   }
-  #enquery{
-    width: 100px;
-    border-radius: 3px;
+  
+
+  .btn-contact {
+    background-color: #004b87;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
-
-
+  
+  .btn-contact:hover {
+    opacity: 1;
+  }
  /* Här är styling för footern på sidan */
 footer {
     background-color: #004b87;

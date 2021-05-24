@@ -16,14 +16,14 @@
     </header>
 
     <nav class="nav-bar" id="navbar">
-        <a href="">Upplevelser</a>
+        <a href=".contact-section">Upplevelser</a>
         <a href="">Hotell</a>
         <a href="">Sightseeing</a>
         <a href="">Erbjudande</a>
     </nav>
 
     <section class="content-section">
-        <img src="picture/pic-1.jpg" alt="Picture from Cuba">
+        
         <button class="btn-book">Boka idag</button>
     </section>
 
@@ -67,26 +67,27 @@
 
     <!------ contact-section------>
     <section class="contact-section">
-        <div class="contact-area">
-            <form action="/action_page.php" class="contact-form">
-            <h1>Kontakta oss</h1>
+        <div class="contact-div">
+            <form action="/action_page.php" class="form-container">
+            <h1>Contact us</h1>
         
             <select id="enquery" name="Enquery" required>
-                <option value="">--Välj ärende--</option>
-                <option value="Kundsupport">Kundsupport</option>
+                <option disabled>--Select--</option>
+                <option value="Kundsupport">Customer support</option>
                 <option value="Feedback">Feedback</option>
-                <option value="Övrigt">Övrigt</option>
+                <option value="Övrigt">Other</option>
                 </select>
 
             <br>
-
-                <input type="text" class=" form-input flname" name="name" placeholder="Ditt namn.." required>
+                    <div>
+                <input type="text" class=" form-input flname" name="name" placeholder="Full name" required>
 
                 <br>
                 
-                <input type="email" class="form-input email" name="email" placeholder="Ditt Email-address.." required>
-            <br>
-                <textarea class="form-input msg" name="msg" placeholder="Skriv ditt meddelande.." ></textarea>
+                <input type="email" class="form-input email" name="email" placeholder="Your email.." required>
+            </div>
+            
+                <textarea class="form-input msg" name="msg" placeholder="Write your message.." ></textarea>
             <br>
                 <input class="btn-contact" type="submit" value="Submit">
             
