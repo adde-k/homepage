@@ -49,7 +49,8 @@ function myFunction() {
   }
 }
 
-//för submit btn kontakta oss
+//contact-section: start
 function myBtn() {
   alert("We'll contact you soon");
 }
+// contact-section: end
