@@ -16,94 +16,88 @@
     </header>
 
     <nav class="nav-bar" id="navbar">
-        <a href=".contact-section">Upplevelser</a>
+        <a href="">Upplevelser</a>
         <a href="">Hotell</a>
         <a href="">Sightseeing</a>
         <a href="">Erbjudande</a>
     </nav>
 
-    <section class="content-section">
-        
+   <section class="content-section">
+        <img class= "bodyimage" src="picture/pic-1.jpg" alt="Picture from Cuba"> 
         <button class="btn-book">Boka idag</button>
+       <div class = "nav-bar" id= "navbar"> </div>
     </section>
-
-    <section class="pic-row">
+<!--     Slideshow of pictures with links -->
+    <section class="slideshow-container">
         
        
-        <div class="pic-column">
+       <div class="mySlideLinks">
             <a href="https://www.computerhope.com/">
                  <img class="pic-1" src="picture/musicians.jpeg" alt="">
             </a>
+
         </div>
-        <div class="pic-column">
-            <a href="https://www.computerhope.com/">
-                 <img class="pic-1" src="picture/avocado.jpeg" alt="">
-            </a>
-        </div>
-        <div class="pic-column">
+
+        <div class="mySlideLinks">
             <a href="https://www.computerhope.com/">
                  <img class="pic-1" src="picture/restaurant.jpeg" alt="">
-            </a>
-        </div>
-        <div class="pic-column">
-            <a href="https://www.computerhope.com/">
-                 <img class="pic-1" src="picture/pic-2.jpeg" alt="">
-            </a>
-        </div>
-        <div class="pic-column">
-            <a href="https://www.computerhope.com/">
-                 <img class="pic-1" src="picture/pic-3.jpeg" alt="">
-            </a>
-        </div><div class="pic-column">
-            <a href="https://www.computerhope.com/">
-                 <img class="pic-1" src="picture/snorkling.jpeg" alt="">
-            </a>
-        </div>
+           
        
-        <a class="prev" onclick="plusSlides(1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>    
+        
+        
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <!-- The dots/circles --> 
+     <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
 
     </section>
+
 
     <!------ contact-section------>
     <section class="contact-section">
         <div class="contact-div">
-            <form action="/action_page.php" class="form-container">
-            <h1>Contact us</h1>
+            <h1 class="title">Contact us</h1>
+
+            <form action="/action_page.php" id="form-container">
+            <h1>Got questions or feedback?</h1>
+            <p> Enter your details and we'll get back to you shortly </p>
         
-            <select id="enquery" name="Enquery" required>
+            <select id="enquery"  name="Enquery" required>
                 <option disabled>--Select--</option>
                 <option value="Kundsupport">Customer support</option>
                 <option value="Feedback">Feedback</option>
                 <option value="Övrigt">Other</option>
                 </select>
-
+    
             <br>
                     <div>
-                <input type="text" class=" form-input flname" name="name" placeholder="Full name" required>
-
+                <input type="text" id="flname" class=" form-input " name="name" placeholder="Full name" required>
+    
                 <br>
                 
-                <input type="email" class="form-input email" name="email" placeholder="Your email.." required>
+                <input type="email" class="form-input"
+                id="email" name="email" placeholder="Your email.." required>
             </div>
             
                 <textarea class="form-input msg" name="msg" placeholder="Write your message.." ></textarea>
             <br>
-                <input class="btn-contact" type="submit" value="Submit">
+                <input id="btn-contact" type="submit" onclick="myBtn()"value="Submit">
             
             
             </form>
         </div>
     </section>
-    <footer>
-<!------ contact-section ------>
-        <div class="footer-bottom">
-            &copy; Design skapad av Andreas Angels
-        </div>
-
-        </div>
 
     </footer>
+
+
+
 
 <!--     Länkning för att sticky ska fungera -->
     <script src="script.js"></script>
