@@ -260,8 +260,9 @@ width: 100%;
           #msg{
             height: 90px;
             width: 100%;
-            resize: horizontal;
-            max-height:100% ;
+            resize: both;
+            max-height:100%;
+            
           }
           
         
