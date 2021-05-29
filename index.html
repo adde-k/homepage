@@ -27,6 +27,8 @@
         <button class="btn-book">Boka idag</button>
        <div class = "nav-bar" id= "navbar"> </div>
     </section>
+
+
 <!--     Slideshow of pictures with links -->
     <section class="slideshow-container">
         
@@ -64,15 +66,15 @@
         <div class="contact-div">
             <h1 class="title">Contact us</h1>
 
-            <form action="/action_page.php" id="form-container">
+            <div  id="form-container">
             <h1>Got questions or feedback?</h1>
             <p> Enter your details and we'll get back to you shortly </p>
-        <br>
+        
             <select id="enquery"  name="Enquery" required>
                 <option disabled>--Select--</option>
-                <option value="Kundsupport">Customer support</option>
+                <option value="support">Customer support</option>
                 <option value="Feedback">Feedback</option>
-                <option value="Övrigt">Other</option>
+                <option value="Other">Other</option>
                 </select>
     
             <br>
@@ -87,10 +89,10 @@
             
                 <textarea class="form-input msg" name="msg" placeholder="Write your message.." ></textarea>
             <br>
-                <input id="btn-contact" type="submit" onclick="myBtn()"value="Submit">
+                <input id="btn-contact" type="submit" onclick="formBtn()"value="Submit">
             
             
-            </form>
+        </div>
         </div>
     </section>
 

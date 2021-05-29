@@ -49,8 +49,7 @@ function myFunction() {
   }
 }
 
-//contact-section: start
-function myBtn() {
+//för submit btn kontakta oss
+function formBtn() {
   alert("We'll contact you soon");
 }
-// contact-section: end

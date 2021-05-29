@@ -191,18 +191,14 @@ width: 100%;
           .contact-div {
             background-image: url("https://images.unsplash.com/photo-1500759285222-a95626b934cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
           
-            min-height: 400px;
-          
+            min-height: 450px;
+            min-width:500px;
             /* för bakgrundsbilden */
-            background-position: top 100px left 10%;
+            background-position: 20px 150px;
             background-repeat: no-repeat;
             background-size: contain;
             
             
-            margin-left: 50px;
-            margin-right: 50px;
-            margin-top: 80px;
-            margin-bottom: 50px;
             width: auto;
             
           }
@@ -212,18 +208,17 @@ width: 100%;
             text-align:center;
             color:#004b87 ;
           }
-          .contact-div #form-container h1{
+          .contact-div #form-container h1,h2{
             
             color: #004b87;
             text-align: center;
-            justify-content: center;
+            
           }
           /*styla form container */
           #form-container {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
+            
             position: absolute;
+            position: center right 25%;
             right: 15%;
             margin: 30px;
             padding:25px;
@@ -231,9 +226,11 @@ width: 100%;
             width: auto;
             background-color: white;
             border: 10px solid #004b87;
-            border-radius: 5px;
+            border-radius: 7px;
+            transition: opacity 300ms ease-in 1s;
           }
-          form div {
+            
+          #form-container div {
             display: flex;
             flex-direction: row;
           }
@@ -260,13 +257,11 @@ width: 100%;
             #flname,#email{
               width: 100%;
             }
-            #email{
-              resize: vertical ;
-            }
           #msg{
-            height: 100px;
+            height: 90px;
             width: 100%;
-            resize: vertical ;
+            resize: horizontal;
+            max-height:100% ;
           }
           
         
