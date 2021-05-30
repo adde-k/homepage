@@ -69,4 +69,7 @@ function myFunction() {
   }
 }
 
-
+//för submit btn kontakta oss
+function formBtn() {
+  alert("We'll contact you soon");
+}

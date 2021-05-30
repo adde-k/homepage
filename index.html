@@ -27,6 +27,9 @@
         <button class="btn-book">Boka idag</button>
        <div class = "nav-bar" id= "navbar"> </div>
     </section>
+
+    <div class="divider"></div>
+    <br>
 <!--     Slideshow of pictures with links -->
 
     <section class="slideshow-container">
@@ -97,7 +100,7 @@
             </div> 
         </div>
         
-        
+    
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -113,39 +116,44 @@
     </section>
     <br>
 
+    <div class="divider"></div>
     <!------ contact-section------>
     <section class="contact-section">
-        <div class="contact-area">
-            <form action="/action_page.php" class="contact-form">
-            <h1>Kontakta oss</h1>
+        <div class="contact-div">
+            <h1 class="title">Contact us</h1>
+  
+            <div  id="form-container">
+            <h1>Got questions or feedback?</h1>
+            <p> Enter your details and we'll get back to you shortly </p>
         
-            <select id="enquery" name="Enquery" required>
-                <option value="">--Välj ärende--</option>
-                <option value="Kundsupport">Kundsupport</option>
+            <select id="enquery"  name="Enquery" required>
+                <option >--Select--</option>
+                <option value="support">Customer support</option>
                 <option value="Feedback">Feedback</option>
-                <option value="Övrigt">Övrigt</option>
+                <option value="Other">Other</option>
                 </select>
-
-   
-
-
+    
             <br>
-
-                <input type="text" class=" form-input flname" name="name" placeholder="Ditt namn.." required>
-
+                    <div>
+                <input type="text" id="flname" class=" form-input " name="name" placeholder="Full name" required>
+    
                 <br>
                 
-                <input type="email" class="form-input email" name="email" placeholder="Ditt Email-address.." required>
+                <input type="email" class="form-input"
+                id="email" name="email" placeholder="Your email.." required>
+            </div>
+            
+                <textarea class="form-input" id= "msg" name="msg" placeholder="Write your message.." ></textarea>
             <br>
-                <textarea class="form-input msg" name="msg" placeholder="Skriv ditt meddelande.." ></textarea>
-            <br>
-                <input class="btn-contact" type="submit" value="Submit">
+                <input id="btn-contact" type="submit" onclick="formBtn()"value="Submit">
             
             
-            </form>
+        </div>
         </div>
     </section>
-    <footer>
+  
+    </footer>
+  
 <!------ contact-section ------>
         <div class="footer-bottom">
             &copy; Design skapad av Andreas Angels
