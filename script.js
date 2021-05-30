@@ -64,12 +64,16 @@ let sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky") 
-  } else {
+  } /*else {
     navbar.classList.remove("sticky");
-  }
+  }*/
 }
 
 //för submit btn kontakta oss
 function formBtn() {
   alert("We'll contact you soon");
+}
+
+function footerBtn() {
+  alert("Thanks for subscribing");
 }
