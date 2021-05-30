@@ -1,12 +1,13 @@
 /* Här är styling som gäller för alla rubriker och texter */
 html,
 body {
-  height: 100;
+  
   box-sizing: border-box;
   font-family: Helvetica, "sans serif";
   margin: 0; 
   padding-left: 40px;
   padding-right: 40px;
+  margin-bottom: -50px;
 }
 
 /* Här har vi style för vår logotype */
@@ -347,3 +348,36 @@ background-color: white ;
   opacity: 1;
 }
 /* css för contact-section tar slut */
+
+.invisible {
+  margin-bottom: 100px;
+ 
+}
+
+
+footer {
+  height: auto;
+  background-color: #004b87;
+  padding: 5px;
+  margin-bottom: 50px; 
+}
+  
+  footer p {
+      margin: 50px;
+      font-weight: 150;
+       font-family: Helvetica, "sans serif";
+      font-size: 18px;
+      text-align: center;
+      color: white;
+  }
+
+  .footer-div  {
+    display: inline;
+   display:flex;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 100%;
+  }
+  
+  
